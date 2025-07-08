@@ -1,0 +1,32 @@
+
+title: Python Generators and Iteration Notes
+
+generators:
+  definition: "Generator is a function and a simple way of creating iterators."
+  characteristics:
+    - "Returns data in tuples (like iterators)."
+    - "Uses yield instead of return."
+    - "Does not store the entire sequence in memory."
+    - "Yields one value at a time."
+    - "Pauses execution at yield and saves local state."
+    - "Resumes from the yield point when next() is called again."
+
+yield_behavior:
+  explanation:
+    - "Yield temporarily pauses the function execution."
+    - "Preserves local variables’ state between calls."
+    - "Acts like an automatic iterator."
+    - "Raises StopIteration when exhausted."
+
+methods:
+  - "__iter__()"
+  - "__next__()"
+
+iteration:
+  definition: "Traversing each element one by one, like in a for loop."
+
+generator_vs_iterator:
+  comparison:
+    - "Generators perform automatic iteration."
+    - "Generators are also known as generator iterators."
+    
